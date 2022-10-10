@@ -171,7 +171,7 @@ left: ${e=>e.position?e.position:"-2000px"};
   justify-content: center;
   top: 1px;
   left: 22px;
-`,a1=()=>z(Np,{to:"/cart",style:{marginRight:"3%",position:"relative"},children:kt(l1,{children:[z(t1,{size:"38",fill:"white"}),z(u1,{children:"0"}),z(dh,{children:"Carrito"})]})}),s1="/assets/mainlogo.f104f64a.png",c1="/assets/whitelogo.6b11f10a.png",f1=jt.img`
+`,a1=()=>z(Np,{to:"/cart",style:{marginRight:"3%",position:"relative"},children:kt(l1,{children:[z(t1,{size:"38",fill:"white"}),z(u1,{children:"0"}),z(dh,{children:"Carrito"})]})}),s1="./assets/mainlogo.f104f64a.png",c1="./assets/whitelogo.6b11f10a.png",f1=jt.img`
 height: 36px;
 display: block;
 
