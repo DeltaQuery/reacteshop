@@ -176,6 +176,8 @@ padding-top: 2rem;
   }
 
   .CartInfo {
+    place-self: center;
+    width: 100%;
   }
 
   .cartResumeContainer {
