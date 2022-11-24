@@ -1,0 +1,140 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --main-black: black;
+  --main-blue: #003A4E;
+  --snd-blue: #2E88CA;
+  --link-color: #3E70AC;
+  --main-green: #28F59F;
+  --snd-green: #8AE1DF;
+  --main-gold: #FED813;
+  --dark-gray: #444444;
+  --med-gray: #A8A8A8;
+  --reg-gray: #e9e9e9;
+  --light-gray: #F4F4F4;
+  --dark-red: #BB0627;
+  --main-font: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  --bg-size: 3.2rem;
+  --h1-size: 2.4rem;
+  --h2-size: 2.2rem;
+  --h3-size: 2.0rem;
+  --h4-size: 1.8rem;
+  --reg-size: 1.6rem;
+  --sm-size: 1.4rem;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light-gray);
+}
+
+h1 {
+  font-size: var(--h1-size);
+}
+
+h3 {
+  font-size: var(--h3-size);
+}
+
+h4 {
+  font-size: var(--h4-size);
+}
+
+h2 {
+  font-size: var(--h2-size);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--sm-size);
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:active {
+  color: var(--main-blue);
+}
+
+a:hover {
+  text-decoration: underline white;
+}
+
+.slider {
+  display: flex;
+  overflow: scroll;
+  gap: 5px;
+}
+
+.slick-slide>div {
+  margin: 5px;
+}
+
+.ContentContainer {
+  margin: auto;
+  width: 95%;
+}
+
+.RemoveIcon {
+  cursor: pointer;
+  opacity: 0.5;
+  fill: var(--dark-gray);
+}
+
+.RemoveIcon:hover, .RemoveIcon:active {
+  opacity: 0.8;
+}
+
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:25px;
+	right:25px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:100;
+}
+
+.float:hover {
+  transform: scale(1.05, 1.05);
+    transition: transform 200ms;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+@media (min-width: 600px) {
+  .ContentContainer {
+    width: 95%;
+    max-width: 1100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}
+
+@media (min-width: 900px) {
+  .ContentContainer {
+    margin-top: 72px;
+    max-width: 1100px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+}

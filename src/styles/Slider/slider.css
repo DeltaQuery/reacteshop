@@ -1,0 +1,39 @@
+.slick-next:before {
+    display: none;
+}
+
+.slick-prev:before {
+    display: none;
+}
+
+.slick-next {
+    background: url('../../assets/slick/nextIco.svg') center center no-repeat !important;
+    background-size: contain !important;
+    margin-right: -26px !important;
+}
+
+.slick-prev {
+    background: url('../../assets/slick/beforeIco.svg') center center no-repeat !important;
+    background-size: cover !important;
+    margin-left: -26px !important;
+}
+
+.slick-next,
+.slick-prev {
+    width: 50px !important;
+    height: 50px !important;
+    display: none !important;
+    opacity: 0.4;
+}
+
+.slick-next:hover, .slick-prev:hover {
+    opacity: 1;
+}
+
+@media (min-width: 650px) {
+
+    .slick-prev,
+    .slick-next {
+        display: block !important;
+    }
+}

@@ -1,0 +1,136 @@
+.SkeletonContainer {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.SkeletonInfo {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.ProductSkeleton {
+    display: flex;
+    flex-direction: column;
+    min-width: 160px;
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border: 1px solid var(--reg-gray);
+    border-radius: 12px;
+    gap: 6px;
+}
+
+.ImgSkeleton, .TitleSkeleton, .PriceSkeleton, .ButtonSkeleton {
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 30%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+    color: transparent;
+    width: 100%;
+}
+
+.ImgSkeleton {
+    max-height: 210px;
+    min-height: 120px;
+    height: 18vw;
+}
+
+.TitleSkeleton {
+    height: 32px;
+}
+
+.PriceSkeleton {
+    height: 17px;
+}
+
+.ButtonSkeleton {
+    height: 46px;
+}
+
+.ImgSkeleton.detailed {
+    min-height: 280px;
+    max-width: 90%;
+    margin: auto;
+    margin-bottom: 4px !important;
+}
+
+.PriceSkeleton.detailed {
+    height: 64px;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
+
+@media (min-width: 600px) {
+
+    .ProductSkeleton.detailed {
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .ProductSkeleton.detailed > div:first-child{
+        width: 38%;
+    }
+
+    .ImgSkeleton.detailed {
+        margin-bottom: 0px !important;
+        min-height: 300px;
+    }
+
+    .SkeletonInfo.detailed {
+        width: 62%;
+    }
+
+    .TitleSkeleton.detailed {
+        height: 28%;
+    }
+
+    .PriceSkeleton.detailed {
+        height: 44%;
+    }
+
+    .ButtonSkeleton.detailed {
+        height: 28%;
+    }
+}
+
+.skeletonContainer div {
+    background: #eee;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 30%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+    color: transparent;
+}
+
+@keyframes shine {
+    to {
+        background-position-x: -200%;
+    }
+}
+
+.addToCartButtonSkeleton {
+    height: 44px !important;
+    width: 100%;
+    border-radius: 6px;
+    display: none;
+}
+
+@media (min-width: 600px) {
+    .addToCartButtonSkeleton {
+        display: block;
+    }
+
+    .skeletonContainer {
+        gap: 0px;
+        padding-bottom: 15px;
+    }
+
+}
